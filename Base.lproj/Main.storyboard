@@ -58,10 +58,10 @@
                                 <exclude reference="85D-46-EeF"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="U2V-rf-NIA"/>
-                                <exclude reference="JKh-pE-mDq"/>
-                                <exclude reference="geU-1T-DNE"/>
                                 <exclude reference="CwW-lZ-X2H"/>
+                                <exclude reference="JKh-pE-mDq"/>
+                                <exclude reference="U2V-rf-NIA"/>
+                                <exclude reference="geU-1T-DNE"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -69,10 +69,10 @@
                                 <include reference="85D-46-EeF"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="U2V-rf-NIA"/>
-                                <include reference="JKh-pE-mDq"/>
-                                <include reference="geU-1T-DNE"/>
                                 <include reference="CwW-lZ-X2H"/>
+                                <include reference="JKh-pE-mDq"/>
+                                <include reference="U2V-rf-NIA"/>
+                                <include reference="geU-1T-DNE"/>
                             </mask>
                         </variation>
                     </view>
@@ -84,7 +84,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="yKh-8i-6ky">
                             <connections>
-                                <segue destination="1t7-PT-nZy" kind="show" identifier="idSegueEditNote" id="Ls0-Wr-1Jv">
+                                <segue destination="1t7-PT-nZy" kind="show" identifier="gotoTodoViewController" id="Ls0-Wr-1Jv">
                                     <nil key="action"/>
                                 </segue>
                             </connections>
@@ -153,13 +153,13 @@
                                 <exclude reference="uTe-LG-l3B"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Nkb-Bc-cjR"/>
                                 <exclude reference="8wD-Nd-rFk"/>
-                                <exclude reference="gXt-C0-97k"/>
+                                <exclude reference="Nkb-Bc-cjR"/>
                                 <exclude reference="Y8c-Un-8HV"/>
-                                <exclude reference="wbf-Mk-sXx"/>
-                                <exclude reference="ofx-7N-uOS"/>
+                                <exclude reference="gXt-C0-97k"/>
                                 <exclude reference="5c8-pf-o6j"/>
+                                <exclude reference="ofx-7N-uOS"/>
+                                <exclude reference="wbf-Mk-sXx"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -168,13 +168,13 @@
                                 <include reference="uTe-LG-l3B"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Nkb-Bc-cjR"/>
                                 <include reference="8wD-Nd-rFk"/>
-                                <include reference="gXt-C0-97k"/>
+                                <include reference="Nkb-Bc-cjR"/>
                                 <include reference="Y8c-Un-8HV"/>
-                                <include reference="wbf-Mk-sXx"/>
-                                <include reference="ofx-7N-uOS"/>
+                                <include reference="gXt-C0-97k"/>
                                 <include reference="5c8-pf-o6j"/>
+                                <include reference="ofx-7N-uOS"/>
+                                <include reference="wbf-Mk-sXx"/>
                             </mask>
                         </variation>
                     </view>

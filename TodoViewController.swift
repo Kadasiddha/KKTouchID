@@ -69,7 +69,7 @@ class TodoViewController: UIViewController, UITextFieldDelegate {
     
     func editNote() {
         // Load all notes.
-        let notesArray: NSArray = NSArray(contentsOfFile: appDelegate.getPathOfDataFile())!
+        let notesArray: NSArray = NSArray(contentsOfFile: appDelegate.KKgetPathOfDataFile())!
         
         // Get the dictionary at the specified index.
         let noteDict : Dictionary = notesArray.objectAtIndex(indexOfEditedNote) as! Dictionary<String, String>
@@ -98,11 +98,11 @@ class TodoViewController: UIViewController, UITextFieldDelegate {
         
         // If the notes data file exists then load its contents and add the new note data too, otherwise
         // just initialize the dataArray array and add the new note data.
-        if appDelegate.checkIfDataFileExists() {
+        if appDelegate.KKcheckIfDataFileExists() {
             // Load any existing notes.
-            dataArray = NSMutableArray(contentsOfFile: appDelegate.getPathOfDataFile())!
+            dataArray = NSMutableArray(contentsOfFile: appDelegate.KKgetPathOfDataFile())!
             
-            // Check if is editing a note or not.
+            // Check if is editing aedit note or not.
             if indexOfEditedNote == nil {
                 // Add the dictionary to the array.
                 dataArray.addObject(noteDict)
@@ -118,7 +118,7 @@ class TodoViewController: UIViewController, UITextFieldDelegate {
         }
         
         // Save the array contents to file.
-        dataArray.writeToFile(appDelegate.getPathOfDataFile(), atomically: true)
+        dataArray.writeToFile(appDelegate.KKgetPathOfDataFile(), atomically: true)
         
         // Notify the delegate class that the note has been saved.
         delegate?.noteWasSaved()
